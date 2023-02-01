@@ -33,14 +33,31 @@ class HomeTab extends StatelessWidget {
                   radius: 22.0,
                   backgroundImage: AssetImage(_usersImages[index]),
                 ),
-                const Positioned(
-                  right: 1.0,
-                  bottom: 1.0,
-                  child: CircleAvatar(
-                    radius: 6.0,
-                    backgroundColor: Colors.green,
+
+                Positioned(
+                  bottom: 0.0,
+                  right: 0.0,
+                  child: Container(
+                    height: 15.0,
+                    width: 15.0,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF4BCB1F),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        width: 2.0,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ),
+                // const Positioned(
+                //   right: 1.0,
+                //   bottom: 1.0,
+                //   child: CircleAvatar(
+                //     radius: 6.0,
+                //     backgroundColor: Colors.green,
+                //   ),
+                // ),
               ],
             ),
             SizedBox(width: width * 0.05),
@@ -107,8 +124,18 @@ class HomeTab extends StatelessWidget {
                 left: 5,
                 top: 5,
                 child: CircleAvatar(
-                    radius: 20.0,
-                    backgroundImage: AssetImage(_userStoryAccountImage[index])),
+                  radius: 20.0,
+                  backgroundColor: Color(0xFF1777F2),
+                  child: CircleAvatar(
+                    radius: 17.0,
+                    backgroundColor: Colors.grey[200],
+                    backgroundImage: AssetImage(_userStoryAccountImage[index]),
+                  ),
+                ),
+                // CircleAvatar(
+                //   radius: 20.0,
+                //   backgroundImage: AssetImage(_userStoryAccountImage[index]),
+                // ),
               ),
             ],
           ),
